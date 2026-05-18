@@ -2,6 +2,163 @@
     color: #0D1321;
     color: #1D2D44;
     color: #3E5C76;
-    color: #748CAB;
+    color: #7479ab;
     color: #F0EBD8;
+}
+.my-navbar-custom {
+    background-color: #8B0000 !important; /* Rojo oscuro */
+}
+
+/* Para cambiar el color de las letras del menú */
+.my-navbar-custom .nav-link {
+    color: #3E5C76 !important;
+}
+
+/* Para cambiar el color de la palabra "Navbar" (Brand) */
+.my-navbar-custom .navbar-brand {
+    color: #748CAB !important;
+}
+
+       /* COLORES PAGINA PRINCIPAL */
+    body {
+      background-color: #0D1321;;
+      
+    }
+    .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+
+
+
+
+
+         /* MENU DESPLEGABLE */
+         /* Botón principal transparente */
+.btn-transparent-custom {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.btn-transparent-custom:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: white !important;
+}
+
+/* Base de los menús oscuros */
+.dropdown-menu-dark {
+    background-color: #121212 !important;
+    border: 1px solid #333 !important;
+    min-width: 200px;
+}
+
+/* ===================================================
+   COMPORTAMIENTO PARA CELULARES (Pantallas chicas)
+   =================================================== */
+@media (max-width: 767px) {
+    /* Hace que las opciones se desplieguen hacia abajo */
+    .dropdown-submenu-list {
+        background-color: #1a1a1a !important;
+        padding-left: 15px; /* Sangría para notar que están adentro */
+    }
+    .dropdown-submenu-list .dropdown-item {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
+
+/* ===================================================
+   COMPORTAMIENTO PARA PC (Pantallas grandes)
+   =================================================== */
+@media (min-width: 768px) {
+    /* Quitamos el efecto colapsable en PC para usar el hover de costado */
+    .dropdown-submenu-list.collapse {
+        display: none;
+    }
+    
+    .nav-item-dropdown {
+        position: relative;
+    }
+
+    /* Al pasar el mouse en PC, se muestra al costado derecho */
+    .nav-item-dropdown:hover > .dropdown-submenu-list {
+        display: block !important;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: #121212 !important;
+        border: 1px solid #333 !important;
+        min-width: 180px;
+        border-radius: 4px;
+    }
+    
+    /* Ocultamos la flechita que pusimos para celulares */
+    .submenu-trigger span {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+    /* BANNER PUNISHER */
+    /* El contenedor con la imagen de fondo */
+  .hero-container {
+    background-image: url('/Imagenes/punisher4.png'); /* Tu ruta */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    
+    /* Esto centra todo lo de adentro */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    color: white; /* Color de las letras */
+    text-align: center;
+    text-shadow: 1.5px 1.5px 5px black;
+    border-radius: 20px;
+  }
+
+  /* Estilo para que el texto se lea mejor */
+  .hero-container h1 {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+  }
+
+  .boton-imagen {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .wrapper {
+  padding: 10px;
+}
+
+.navbar {
+  width: 100%;
+  border-radius: 10px;
+  background: #333;
 }
