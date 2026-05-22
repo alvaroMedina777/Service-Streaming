@@ -6,93 +6,222 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom custom-navbar-frame">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand" href="index.html">
+          <img src="/Imagenes/Logo nuevo.png" alt="SeatFlow Logo" height="38" class="d-inline-block align-text-top">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+            
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#">Inicio</a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Explorar Contenido
+              </a>
+              
+              <ul class="dropdown-menu dropdown-menu-dark custom-responsive-menu">
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-peliculas" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Ciencia Ficcion <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-peliculas">
+                    <li><a class="dropdown-item" href="404.html">Peliculas</a></li>
+                    <li><a class="dropdown-item" href="404.html">Series</a></li>
+                  </ul>
+                </li>
 
-  
-                    <!-- NAVBAR - OPCIONES -->
-    
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
-  
-  <div class="container-fluid">
-    <div class="wrapper">
-  <nav class="navbar"></nav>
-</div>
-    <a class="navbar-brand" href="index.html">
-    <img src="../imagenes/Gemini_Generated_Image_9liv8g9liv8g9liv.png" alt="SeatFlow Logo" height="40" class="d-inline-block align-text-top"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-        </li>
-       
-       <div class="dropdown">
-  <button class="btn btn-transparent-custom dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-    Explorar Contenido
-  </button>
-  
-  <ul class="dropdown-menu dropdown-menu-dark custom-responsive-menu">
-    
-    <li class="nav-item-dropdown">
-      <a class="dropdown-item submenu-trigger" href="#sub-peliculas" data-bs-toggle="collapse" role="button" aria-expanded="false">
-        Películas <span class="d-md-none float-end">▼</span>
-      </a>
-      <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-peliculas">
-        <li><a class="dropdown-item" href="index.html">Ver Recientes</a></li>
-        <li><a class="dropdown-item" href="404.html">Ver Populares</a></li>
-      </ul>
-    </li>
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-series" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Comedia <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-series">
+                    <li><a class="dropdown-item" href="index.html">Peliculas</a></li>
+                    <li><a class="dropdown-item" href="index.html">Series</a></li>
+                  </ul>
+                </li>
 
-    <li class="nav-item-dropdown">
-      <a class="dropdown-item submenu-trigger" href="#sub-series" data-bs-toggle="collapse" role="button" aria-expanded="false">
-        Series <span class="d-md-none float-end">▼</span>
-      </a>
-      <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-series">
-        <li><a class="dropdown-item" href="index.html">Maratón</a></li>
-        <li><a class="dropdown-item" href="404.html">Estrenos</a></li>
-      </ul>
-    </li>
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-lista" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Mi Lista <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-lista">
+                    <li><a class="dropdown-item" href="404.html">Guardados</a></li>
+                    <li><a class="dropdown-item" href="404.html">Favoritos</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
 
-    <li class="nav-item-dropdown">
-      <a class="dropdown-item submenu-trigger" href="#sub-lista" data-bs-toggle="collapse" role="button" aria-expanded="false">
-        Mi Lista <span class="d-md-none float-end">▼</span>
-      </a>
-      <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-lista">
-        <li><a class="dropdown-item" href="index.html">Guardados</a></li>
-        <li><a class="dropdown-item" href="404.html">Favoritos</a></li>
-</div>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-</div>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Ingresar</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 bg-dark text-white border-secondary" type="search" placeholder="Buscar..." aria-label="Search"/>
+            <button class="btn btn-outline-cyan" type="submit">Buscar</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <div class="hero-container">
+    <h1>Punisher</h1>
+    <p>Frank Castle intenta vivir una vida sin necesidad de venganza como el justiciero Punisher, solo para verse envuelto en un conflicto inesperado con un imperio criminal en ascenso.</p>
+    <a href="404.html" class="boton-imagen mb-3 nav-link">Ver Serie</a>
   </div>
-</nav>
-<style>
-  
-</style>
 
-<div class="hero-container">
-  <h1>Punisher</h1>
-  <p>Frank Castle intenta vivir una vida sin necesidad de venganza como el justiciero Punisher, solo para verse envuelto en un conflicto inesperado con un imperio criminal en ascenso.</p>
-  <button onclick="window.location.href='404.html'" class="boton-imagen">
-  Ver Pelicula
-</button>
+ 
+  <div class="contenedor-responsivo">
+    <img src="/Imagenes/promonueva2.jpg" alt="Imagen destacada" class="imagen-adaptable">
+    
+    <button class="btn-suscribirse">Suscribirse</button>
 </div>
 
 
 
 
 
+  <div class="container-fluid my-5">
 
+  <div class="catalogo-box">
 
+    <div class="catalogo-carrusel">
+
+      <a href="404.html" class="posicion-enlace">
+        <img src="/Imagenes/Deadpool 3 And Wolverine 2024 Póster_.jpg"
+             class="imagen-catalogo"
+             alt="Promo 1">
+      </a>
+
+      <a href="404.html" class="posicion-enlace">
+        <img src="/Imagenes/descarga.jpg"
+             class="imagen-catalogo"
+             alt="Promo 2">
+      </a>
+
+      <a href="404.html" class="posicion-enlace">
+        <img src="/Imagenes/Mi Pequeño Angelito 2 perdio en Nueva York.jpg"
+             class="imagen-catalogo"
+             alt="Promo 3">
+      </a>
+
+      <a href="404.html" class="posicion-enlace">
+        <img src="/Imagenes/Star Wars_ The Force Awakens (2015).jpg"
+             class="imagen-catalogo"
+             alt="Promo 4">
+      </a>
+
+      <a href="404.html" class="posicion-enlace">
+        <img src="/Imagenes/Son Como Niños - Poster.jpg"
+             class="imagen-catalogo"
+             alt="Promo 5">
+
+               <a href="404.html" class="posicion-enlace">
+        <img src="/Imagenes/Minions (2015).jpg"
+             class="imagen-catalogo"
+             alt="Promo 5"></div></div>
+
+             
+</div>
+
+  <footer class="bg-light text-dark py-5 border-top">
+    <div class="container-fluid">
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+          <img src="/Imagenes/Logo nuevo.png" alt="SeatFlow Logo" height="40" class="mb-3">
+          <p class="text-muted small">© 2026 SeatFlow. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+          <h5 class="fw-bold mb-3">Conocenos</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="about.html" class="nav-link p-0 text-muted">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="contacto.html" class="nav-link p-0 text-muted">Contacto por consultas</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 text-center text-lg-start">
+          <h5 class="fw-bold mb-3">Seguinos en</h5>
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+            <a href="https://facebook.com" class="text-decoration-none text-muted" target="_blank">
+              <i class="bi bi-facebook me-1"></i> Facebook
+            </a>
+            <a href="https://instagram.com" class="text-decoration-none text-muted" target="_blank">
+              <i class="bi bi-instagram me-1"></i> Instagram
+            </a>
+            <a href="https://twitter.com" class="text-decoration-none text-muted" target="_blank">
+              <i class="bi bi-twitter-x me-1"></i> Twitter
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+         
+  
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white border-cyan-modal">
+        
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title fw-bold" id="loginModalLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label text-light">Correo Electrónico</label>
+              <input type="email" class="form-control bg-secondary text-white border-0" id="inputEmail" placeholder="nombre@gmail.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="inputPassword" class="form-label text-light">Contraseña</label>
+              <input type="password" class="form-control bg-secondary text-white border-0" id="inputPassword" placeholder="Tu contraseña" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkRecordar">
+              <label class="form-check-label text-muted" for="checkRecordar">Recordarme en este dispositivo</label>
+            </div>
+            
+            <button type="submit" class="btn btn-cyan-modal w-100 fw-bold mt-2">INGRESAR</button>
+          </form>
+        </div>
+        
+        <div class="modal-header border-top border-secondary justify-content-center">
+          <p class="m-0 small text-muted">¿No tenés cuenta? <a href="registro.html" class="text-cyan-link text-decoration-none">Registrate acá</a></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
 
 
 
