@@ -8,73 +8,77 @@
     <link rel="stylesheet" href="/css/nosotros.css">
 </head>
 <body>
-
-                            <!-- NAVBAR - OPCIONES -->
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom custom-navbar-frame">
+      <div class="container-fluid">
         
-        <div class="container-fluid">
-            <div class="wrapper">
-        <nav class="navbar"></nav>
-        </div>
-            <a class="navbar-brand" href="index.html">
-            <img src="../imagenes/Gemini_Generated_Image_9liv8g9liv8g9liv.png" alt="SeatFlow Logo" height="40" class="d-inline-block align-text-top"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
+        <a class="navbar-brand" href="index.html">
+          <img src="/Imagenes/Logo nuevo.png" alt="SeatFlow Logo" height="38" class="d-inline-block align-text-top">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
             
-            <div class="dropdown">
-                <button class="btn btn-transparent-custom dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                    Explorar Contenido
-                </button>
-        
-            <ul class="dropdown-menu dropdown-menu-dark custom-responsive-menu">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#">Inicio</a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Explorar Contenido
+              </a>
+              
+              <ul class="dropdown-menu dropdown-menu-dark custom-responsive-menu">
                 <li class="nav-item-dropdown">
-                    <a class="dropdown-item submenu-trigger" href="#sub-peliculas" data-bs-toggle="collapse" role="button" aria-expanded="false">
-                        Películas <span class="d-md-none float-end">▼</span>
-                    </a>
-                    <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-peliculas">
-                        <li><a class="dropdown-item" href="index.html">Ver Recientes</a></li>
-                        <li><a class="dropdown-item" href="404.html">Ver Populares</a></li>
-                    </ul>
+                  <a class="dropdown-item submenu-trigger" href="#sub-peliculas" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Ciencia Ficcion <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-peliculas">
+                    <li><a class="dropdown-item" href="404.html">Peliculas</a></li>
+                    <li><a class="dropdown-item" href="404.html">Series</a></li>
+                  </ul>
                 </li>
 
-            <li class="nav-item-dropdown">
-                <a class="dropdown-item submenu-trigger" href="#sub-series" data-bs-toggle="collapse" role="button" aria-expanded="false">
-                    Series <span class="d-md-none float-end">▼</span>
-                </a>
-                <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-series">
-                    <li><a class="dropdown-item" href="index.html">Maratón</a></li>
-                    <li><a class="dropdown-item" href="404.html">Estrenos</a></li>
-                </ul>
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-series" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Comedia <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-series">
+                    <li><a class="dropdown-item" href="index.html">Peliculas</a></li>
+                    <li><a class="dropdown-item" href="index.html">Series</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-lista" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Mi Lista <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-lista">
+                    <li><a class="dropdown-item" href="404.html">Guardados</a></li>
+                    <li><a class="dropdown-item" href="404.html">Favoritos</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
 
-            <li class="nav-item-dropdown">
-                <a class="dropdown-item submenu-trigger" href="#sub-lista" data-bs-toggle="collapse" role="button" aria-expanded="false">
-                    Mi Lista <span class="d-md-none float-end">▼</span>
-                </a>
-                <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-lista">
-                    <li><a class="dropdown-item" href="index.html">Guardados</a></li>
-                    <li><a class="dropdown-item" href="404.html">Favoritos</a></li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Ingresar</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 bg-dark text-white border-secondary" type="search" placeholder="Buscar..." aria-label="Search"/>
+            <button class="btn btn-outline-cyan" type="submit">Buscar</button>
+          </form>
         </div>
-                <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-        </div>
-        </nav>
-    </header>
+
+      </div>
+    </nav>
+  </header>
 
     <main>
         <div class="container py-5">
