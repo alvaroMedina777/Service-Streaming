@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tarjetaPlan,
+.formularioSuscripcion {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.tarjetaPlan {
+  transition: transform 0.2s;
+}
+.tarjetaPlan:hover {
+  transform: scale(1.03);
+}
+.tituloPlan {
+  font-size: 2.5rem;
+}
+.precio {
+  color: crimson;
+  font-size: 2rem;
+}
+.precioAnual {
+  color: darkblue;
+}
+.formularioSuscripcion {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.boton {
+  background-color: red;
+  color: aliceblue;
+}
