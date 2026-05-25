@@ -215,7 +215,6 @@ html, body {
         height: 320px; 
     }
 }
-}
 
 /* ===================================================
    8. MODAL INICIAR SESIÓN
@@ -297,7 +296,7 @@ html, body {
     flex: 0 0 auto; /* No se deforma ni se estira con la imagen */
     background-color: #00ffd0; 
     color: rgb(0, 0, 0);
-    padding: 18px 32px; /
+    padding: 18px 32px;
     font-size: 16px;
     font-weight: bold;
     border-color: whitesmoke;
