@@ -1,0 +1,41 @@
+body {
+
+    background-color:#000000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h4 {
+    font-weight: bold;
+}
+
+.card {
+    background-color: #1f1f1f;
+    border: none;
+    color: white;
+}
+
+.card img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.pelicula-card {
+    transition: 0.3s;
+}
+
+.pelicula-card:hover {
+    transform: scale(1.03);
+}
+
+.descripcion {
+    color: #d1d1d1;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.info-box {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+}
