@@ -5,39 +5,249 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/contacto.css ">
 </head>
 <body>
-    <header></header>
-    <main>
-        <section>
-            <form action="" class="row needs-validation" novalidate>
-                <div>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" class="form-control"
-                    id="nombre" required>
-                </div>
-                <div>
-                    <label for="telefono">Telefono de contacto</label>
-                    <input type="number" class="form-control"
-                    id="telefono" required placeholder="Sin 0 ni 15">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control"
-                    id="email" required placeholder="example@example.com">
-                </div>
-                <div>
-                    <label for="consulta">Consultas o Sugerencias</label>
-                    <textarea name="consulta" id="consulta" class="form-control" required placeholder="Dejanos tus dudas o sugeninos alguna peli o serie."></textarea>
-                </div>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom custom-navbar-frame">
+      <div class="container-fluid">
         
+        <a class="navbar-brand" href="../pages/index.html">
+          <img src="../Imagenes/Logo nuevo.png" alt="SeatFlow Logo" height="38" class="d-inline-block align-text-top">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+            
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="../pages/index.html">Inicio</a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Explorar Contenido
+              </a>
+              
+              <ul class="dropdown-menu dropdown-menu-dark custom-responsive-menu">
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-peliculas" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Ciencia Ficcion <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-peliculas">
+                    <li><a class="dropdown-item" href="../pages/404.html">Peliculas</a></li>
+                    <li><a class="dropdown-item" href="../pages/404.html">Series</a></li>
+                  </ul>
+                </li>
 
-            </form>
-        </section>
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-series" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Comedia <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-series">
+                    <li><a class="dropdown-item" href="../pages/404.html">Peliculas</a></li>
+                    <li><a class="dropdown-item" href="../pages/404.html">Series</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item-dropdown">
+                  <a class="dropdown-item submenu-trigger" href="#sub-lista" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Mi Lista <span class="d-md-none float-end">▼</span>
+                  </a>
+                  <ul class="collapse dropdown-submenu-list list-unstyled" id="sub-lista">
+                    <li><a class="dropdown-item" href="../pages/404.html">Guardados</a></li>
+                    <li><a class="dropdown-item" href="../pages/404.html">Favoritos</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Ingresar</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 bg-dark text-white border-secondary" type="search" placeholder="Buscar..." aria-label="Search"/>
+            <button class="btn btn-outline-cyan" type="submit">Buscar</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+    <main>
+      <section class="container">
+        <div class="row">
+          <h1 class="col visitanos text-center">
+            Visitanos
+          </h1>
+        </div>
+        <div class="row">
+          <p class="col visitanos text-center">
+            Gral. José María Paz 576, T4000 San Miguel de Tucumán, Tucumán
+          </p>          
+        </div>
+      </section>
+        <section class="container">
+        <form
+          action=""
+          class="row g-3 my-2 p-2 needs-validation formulario"
+          novalidate
+        >
+          <div class="col-10 col-md-8 m-auto mb-2 fw-bold">
+            <label for="nombre" class="form-label fw-bold"
+              >Nombre y Apellido</label
+            >
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-person-bounding-box"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre y Apellido"
+                id="nombre"
+                aria-label="Nombre"
+                autocomplete="name"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor, escribe tu nombre y apellido
+              </div>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 m-auto mb-2 fw-bold">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-envelope-at-fill"></i
+              ></span>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="ejemplo@ejemplo.com"
+                id="email"
+                aria-label="email"
+                autocomplete="email"
+                required
+              />
+              <div class="invalid-feedback">El email no es válido</div>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 m-auto mb-2 fw-bold">
+            <label for="telefono" class="form-label fw-bold"
+              >Teléfono de Contacto</label
+            >
+            <div class="input-group">
+              <span class="input-group-text"
+                ><i class="bi bi-telephone-fill"></i
+              ></span>
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="Sin el 0 y sin el 15"
+                id="telefono"
+                aria-label="telefono"
+                autocomplete="tel"
+                maxlength="10"
+                required
+              />
+            </div>
+            <div class="invalid-feedback">
+              Ingresa un número de teléfono válido
+            </div>
+          </div>
+          <div class="col-10 col-md-8 m-auto mb-2 fw-bold mb-2">
+            <label for="mensaje" class="form-label fw-bold"
+              >Consultas o Sugerencias</label
+            >
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              class="form-control input-contacto"
+              placeholder="Dejanos tus dudas o sugerinos alguna peli o serie."
+              required
+            ></textarea>
+            <div class="invalid-feedback">Por favor, escribe tu mensaje</div>
+          </div>
+          <div class="text-center">
+            <input class="btn col-md-2 boton" type="submit" value="Enviar" />
+            <input class="btn col-md-2 boton" type="reset" value="Borrar" />
+
+          </div>
+          </div>
+
+        </form>
+      </section>
     </main>
-    <footer></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer class="bg-light text-dark py-5 border-top">
+    <div class="container-fluid">
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+          <img src="../Imagenes/Logo nuevo.png" alt="SeatFlow Logo" height="40" class="mb-3">
+          <p class="text-muted small">© 2026 SeatFlow. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+          <h5 class="fw-bold mb-3">Conocenos</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="../pages/nosotros.html" class="nav-link p-0 text-muted">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Contacto por consultas</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 text-center text-lg-start">
+          <h5 class="fw-bold mb-3">Seguinos en</h5>
+          <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+            <a href="https://facebook.com" class="text-decoration-none text-muted" target="_blank">
+              <i class="bi bi-facebook me-1"></i> Facebook
+            </a>
+            <a href="https://instagram.com" class="text-decoration-none text-muted" target="_blank">
+              <i class="bi bi-instagram me-1"></i> Instagram
+            </a>
+            <a href="https://twitter.com" class="text-decoration-none text-muted" target="_blank">
+              <i class="bi bi-twitter-x me-1"></i> Twitter
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+      (() => {
+        "use strict";
+        const forms = document.querySelectorAll(".needs-validation");
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false,
+          );
+        });
+      })();
+    </script>
 </body>
 </html>

@@ -2,6 +2,410 @@
     color: #0D1321;
     color: #1D2D44;
     color: #3E5C76;
-    color: #748CAB;
+    color: #7479ab;
     color: #F0EBD8;
+}
+
+
+/* ===================================================
+   1. CONFIGURACIÓN GLOBAL Y PREVENTIVA
+   =================================================== */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Evita que la página se mueva de costado en celulares */
+    background-color: #000000;
+}
+
+/* ===================================================
+   2. NAVBAR - MARCO Y GENERAL
+   =================================================== */
+.bg-dark-custom {
+    background-color: #000000 !important; /* Fondo negro absoluto */
+}
+
+.custom-navbar-frame {
+    border: 2px solid #00bcd4 !important; /* Borde celeste vibrante */
+    border-radius: 15px !important;       /* Bordes redondeados */
+    margin: 15px;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.25);
+    padding: 10px 20px;
+}
+
+/* Enlaces del navbar (Inicio, Ingresar, etc.) */
+.custom-navbar-frame .nav-link-custom {
+    color: #ffffff !important; /* Blancos de entrada */
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.custom-navbar-frame .nav-link-custom:hover {
+    color: #00bcd4 !important; /* Pasan a celeste en hover */
+}
+
+/* Texto deshabilitado en gris sutil */
+.disabled-custom {
+    color: #6c757d !important;
+    padding: 0.5rem 1rem;
+    cursor: not-allowed;
+}
+
+/* ===================================================
+   3. BOTÓN EXPLORAR CONTENIDO (CHAU CAJA BLANCA)
+   =================================================== */
+.btn-transparent-custom {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: #ffffff !important; /* Letra blanca por defecto */
+    border: none !important;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: color 0.2s ease;
+}
+
+/* Forzado absoluto de estados para evitar que Bootstrap meta la caja blanca/gris */
+.btn-transparent-custom:focus, 
+.btn-transparent-custom:active, 
+.btn-transparent-custom:focus-visible,
+.btn-transparent-custom.show,
+.show > .btn-transparent-custom.dropdown-toggle {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: #ffffff !important; /* Se mantiene blanca al hacer clic o abrirse */
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.btn-transparent-custom:hover {
+    color: #00bcd4 !important; /* Solo celeste al pasar el mouse */
+    background-color: transparent !important;
+}
+
+/* ===================================================
+   4. DROPDOWN Y MENÚ DESPLEGABLE RESPONSIVO
+   =================================================== */
+.dropdown-menu-dark {
+    background-color: #121212 !important;
+    border: 1px solid #333 !important;
+    min-width: 200px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+/* Celulares (Pantallas chicas) */
+@media (max-width: 767px) {
+    .dropdown-submenu-list {
+        background-color: #1a1a1a !important;
+        padding-left: 15px; /* Sangría de orden */
+    }
+    .dropdown-submenu-list .dropdown-item {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
+
+/* PC (Pantallas grandes) */
+@media (min-width: 768px) {
+    .dropdown-submenu-list.collapse {
+        display: none;
+    }
+    
+    .nav-item-dropdown {
+        position: relative;
+    }
+
+    .nav-item-dropdown:hover > .dropdown-submenu-list {
+        display: block !important;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: #121212 !important;
+        border: 1px solid #333 !important;
+        min-width: 180px;
+        border-radius: 4px;
+    }
+    
+    .submenu-trigger span {
+        display: none !important; /* Oculta la flechita de celu en PC */
+    }
+}
+
+/* ===================================================
+   5. BOTÓN BUSCAR
+   =================================================== */
+.btn-outline-cyan {
+    color: #00bcd4 !important;
+    border-color: #00bcd4 !important;
+    background-color: transparent !important;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-cyan:hover {
+    background-color: #00bcd4 !important;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+/* ===================================================
+   6. HERO BANNER (PUNISHER)
+   =================================================== */
+.hero-container {
+    background-image: url('/Imagenes/punisher4.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 5px black;
+    border-radius: 20px;
+}
+
+.boton-imagen {
+    padding: 10px 20px;
+    background-color: #00ffd0;
+    color: rgb(0, 0, 0);
+    border-color: whitesmoke;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Contenedor adaptativo de la imagen de fondo */
+.boton-imagen-responsivo {
+    /* 1. RUTA DE LA IMAGEN: Cambia esto por la ruta real de tu banner */
+    background-image: url('/Imagenes/promonueva2.jpg'); 
+    
+    /* 2. ADAPTACIÓN MÁGICA: 'cover' evita que la foto se aplaste, la recorta sutilmente */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* 3. TAMAÑO EN CELULARES: Altura fija para que el banner sea visible y cómodo */
+    height: 160px; 
+    
+    /* Estilos estéticos: bordes y sombra sutil */
+    border-radius: 20px;
+    border: 1px solid rgba(247, 254, 255, 0);
+    transition: transform 0.2s ease, filter 0.2s ease;
+    width: 100%; /* Se clava al ancho de la pantalla */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Efecto visual al pasar el mouse */
+.boton-imagen-responsivo:hover {
+    transform: scale(1.01);
+    filter: brightness(1.1);
+}
+
+/* 4. AJUSTE PARA PANTALLAS GRANDES (PC) */
+@media (min-width: 992px) {
+    .boton-imagen-responsivo {
+        /* En monitores aumentamos el alto para que mantenga la proporción original alargada */
+        height: 320px; 
+    }
+};
+
+/* ===================================================
+   8. MODAL INICIAR SESIÓN
+   =================================================== */
+.border-cyan-modal {
+    border: 2px solid #00bcd4 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
+.modal-body .form-control {
+    background-color: #1f2327 !important;
+    color: #ffffff !important;
+}
+
+.modal-body .form-control::placeholder {
+    color: #a0a6ac;
+}
+
+.modal-body .form-control:focus {
+    border-color: #00bcd4 !important;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.5) !important;
+}
+
+.btn-cyan-modal {
+    background-color: #00bcd4 !important;
+    color: #000000 !important;
+    transition: all 0.2s ease;
+}
+
+.btn-cyan-modal:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    transform: scale(1.02);
+}
+
+.text-cyan-link {
+    color: #00bcd4 !important;
+    font-weight: bold;
+}
+
+.text-cyan-link:hover {
+    text-decoration: underline !important;
+}
+
+
+
+
+/*IMAGEN PROMOCION */
+* {
+    box-sizing: border-box;
+}
+
+
+.contenedor-responsivo {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1500px; /* <--- Esto hace que la imagen crezca mucho más en PC */
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* La imagen ahora se estira más en pantallas grandes */
+.imagen-adaptable {
+    display: block;
+    flex: 2; 
+    min-width: 0;
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Botón celeste que se mantiene firme a la par */
+.btn-suscribirse {
+    flex: 0 0 auto; /* No se deforma ni se estira con la imagen */
+    background-color: #00ffd0; 
+    color: rgb(0, 0, 0);
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: whitesmoke;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+}
+
+/* Efecto hover */
+.btn-suscribirse:hover {
+    background-color: #00ff95; 
+}
+
+/* Comportamiento para celulares (pantallas chicas) */
+@media (max-width: 600px) {
+    .contenedor-responsivo {
+        flex-direction: column; /* Se apilan verticalmente */
+        gap: 15px;
+    }
+    .btn-suscribirse {
+        width: 100%; /* El botón ocupa todo el ancho abajo de la imagen */
+        text-align: center;
+    }
+}
+
+/* CAJAS DE PELICULAS*/
+
+.catalogo-box{
+
+    background: #050505;
+
+    border: 2px solid #00e5ff;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    box-shadow:
+    0 0 15px rgba(0,229,255,.4),
+    0 0 35px rgba(0,229,255,.15);
+
+    overflow: hidden;
+}
+
+/* carrusel horizontal */
+
+.catalogo-carrusel{
+
+    display: flex;
+
+    gap: 22px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    padding-bottom: 10px;
+}
+
+/* ocultar barra */
+
+.catalogo-carrusel::-webkit-scrollbar{
+
+    height: 8px;
+}
+
+.catalogo-carrusel::-webkit-scrollbar-thumb{
+
+    background: #00e5ff;
+
+    border-radius: 20px;
+}
+
+/* posters */
+
+.imagen-catalogo{
+
+    width: 220px;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border: 2px solid rgba(0,229,255,.45);
+
+    transition: .35s;
+}
+
+.imagen-catalogo:hover{
+
+    transform:
+    scale(1.07);
+
+    box-shadow:
+    0 0 20px rgba(0,229,255,.7);
+}
+
+/* móvil */
+
+@media(max-width:768px){
+
+    .imagen-catalogo{
+
+        width:150px;
+
+        height:220px;
+    }
+
 }
