@@ -1,0 +1,18 @@
+.boton {
+    background-color: #00bcd4;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+  color: aliceblue;
+}
+.boton:hover {
+
+}
+.boton:active {
+  transform: scale(0.95);
+  
+}
+
+.formulario, .visitanos{
+color: aliceblue;
+}
+
