@@ -156,7 +156,7 @@ html, body {
    6. HERO BANNER (PUNISHER)
    =================================================== */
 .hero-container {
-    background-image: url('/Imagenes/punisher4.png');
+    background-image: url('../Imagenes/punisher4.png');
     background-size: cover;
     background-position: center;
     height: 400px;
